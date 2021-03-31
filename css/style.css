@@ -1,0 +1,24 @@
+head {
+  color: #b6bb5f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+header {
+  font-size: 24px;
+  color: #b6bb5f;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+	display: inline;
+	position: absolute;
+	left:150px;
+	top: 0px;
+	color: #b6bb5f;
+}
+
+body {
+  font-size: 16px;
+  color: #b6bb5f;
+  font-family: 'Oxygen', sans-serif;
+}
