@@ -1,12 +1,6 @@
 head {
-  color: #b6bb5f;
-  font-family: 'Oxygen', sans-serif;
-}
-
-header {
-  font-size: 24px;
-  color: #b6bb5f;
-  font-family: 'Oxygen', sans-serif;
+	color: #b6bb5f;
+	font-family: 'Oxygen', sans-serif;
 }
 
 h1 {
@@ -15,10 +9,28 @@ h1 {
 	left:150px;
 	top: 0px;
 	color: #b6bb5f;
+	padding-left: 10px;
 }
 
 body {
-  font-size: 16px;
-  color: #b6bb5f;
-  font-family: 'Oxygen', sans-serif;
+	font-size: 16px;
+	color: #b6bb5f;
+	font-family: 'Oxygen', sans-serif;
+	background-color: #efefef;
+}
+
+header {
+	font-size: 24px;
+	color: #b6bb5f;
+	font-family: 'Oxygen', sans-serif;
+	background-color: #ffffff;
+}
+
+.align-center {
+	display: block;
+	margin: 0px auto;
+}
+
+footer {
+	float: left;
 }
