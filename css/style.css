@@ -49,6 +49,7 @@ td button {
 	background-color: #b6bb5f;
 	color: #fff;
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 button:hover {
@@ -57,6 +58,12 @@ button:hover {
 
 #newOrder {
 	width: 600px;
+	height: 100px;
+	font-size: 24px;
+	background-color: #b6bb5f;
+	color: #fff;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 .center {
