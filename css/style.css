@@ -31,6 +31,39 @@ header {
 	margin: 0px auto;
 }
 
+table {
+	margin-left: auto; 
+  	margin-right: auto;
+	text-align: center;
+}
+
+td {
+	text-align: center;
+	width: 300px;
+	height: 100px;
+}
+td button {
+	width: 300px;
+	height: 100px;
+	font-size: 24px;
+	background-color: #b6bb5f;
+	color: #fff;
+	border-radius: 10px;
+}
+
+button:hover {
+	background-color: #6d712eff
+}
+
+#newOrder {
+	width: 600px;
+}
+
+.center {
+	margin-left: auto;
+ 	margin-right: auto;
+}
+
 footer {
 	float: left;
 }
