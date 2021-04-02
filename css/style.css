@@ -26,6 +26,10 @@ header {
 	background-color: #ffffff;
 }
 
+#mainWindow {
+	align-content: center;
+}
+
 .align-center {
 	display: block;
 	margin: 0px auto;
@@ -43,7 +47,7 @@ td {
 	height: 100px;
 }
 td button {
-	width: 300px;
+	width: 250px;
 	height: 100px;
 	font-size: 24px;
 	background-color: #b6bb5f;
@@ -57,7 +61,7 @@ button:hover {
 }
 
 #newOrder {
-	width: 600px;
+	width: 500px;
 	height: 100px;
 	font-size: 24px;
 	background-color: #b6bb5f;
