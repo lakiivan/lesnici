@@ -18,6 +18,8 @@ h1 {
 	color: #fff;
 	border-radius: 10px;
 	cursor: pointer;
+	margin-right: 5px;
+	margin-top: 5px;
 }
 
 body {
@@ -83,8 +85,6 @@ button:hover {
  	margin-right: auto;
 }
 
-
-
 #contentHead {
 	background-color: #ffffff;
 	color: #b6bb5f;
@@ -96,6 +96,11 @@ button:hover {
 	color: #b6bb5f;
 	padding: 10px, 10px, 10px, 10px;
 }
+
+#podaci {
+	padding-left: 5px;
+}
+
 
 footer {
 	float: left;

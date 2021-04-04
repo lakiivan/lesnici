@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded",
           for (i = 0; i < orders.length; i++) {
             if (orders[i].isporuceno === 'ne') {
               counter++;
-              message += "<p>";
+              message += "<p id='podaci'>";
               message += "Record id: " + orders[i].recordId 
               + ", name " + orders[i].name 
               + ", za naplatu - " + orders[i].cena + " din;"
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",
           }
           message += "</div>";
           console.log("counter is: " + counter);
-          var messageHead =  "<h2> Aktivni orderi: " + counter + "</h2>";
+          var messageHead =  "<h2 id='podaci'> Aktivni orderi: " + counter + "</h2>";
 
           document.querySelector("#contentHead")
           .innerHTML = messageHead;
@@ -57,8 +57,8 @@ document.addEventListener("DOMContentLoaded",
           message += "<div>"
           var i;
           for (i = 0; i < orders.length; i++) {
-              message += "<p>";
-              message += "Record id: " + orders[i].recordId 
+              message += "<p id='podaci'>";
+                            message += "Record id: " + orders[i].recordId 
               + ", name " + orders[i].name 
               + ", za naplatu - " + orders[i].cena  + " din;"
               + " lesnici: " + orders[i].lesnik + " kg;"
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded",
           }
           message += "</div>";
 
-          var messageHead =  "<h2> Ukupno svi orderi: " + orders.length + "</h2>";
+          var messageHead =  "<h2 id='podaci'> Ukupno svi orderi: " + orders.length + "</h2>";
 
           document.querySelector("#contentHead")
           .innerHTML = messageHead;

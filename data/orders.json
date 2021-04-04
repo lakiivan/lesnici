@@ -1,7 +1,12 @@
 {
 	"orders": [
     { "recordId":1, "name":"Ivana Zekovic", "cena":900,"lesnik":1, "lomljeni":0, "orah":0, "crni orah":0 ,"isporuceno":"da", "naplaceno":"da"},
-    { "recordId":2, "name":"Vesna Vodnik", "cena":1600,"lesnik":0, "lomljeni":0, "orah":2, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"},
-    { "recordId":3, "name":"Ivana Zekovic", "cena":800,"lesnik":0, "lomljeni":0, "orah":1, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"}
+    { "recordId":2, "name":"Vesna Vodnik", "cena":1600,"lesnik":0, "lomljeni":0, "orah":2, "crni orah":0 ,"isporuceno":"da", "naplaceno":"da"},
+    { "recordId":3, "name":"Vanila cake", "cena":1400,"lesnik":0, "lomljeni":2, "orah":0, "crni orah":0 ,"isporuceno":"da", "naplaceno":"da"},
+    { "recordId":4, "name":"Vesna Randjelovic", "cena":900,"lesnik":1, "lomljeni":0, "orah":0, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"},
+    { "recordId":5, "name":"Mara", "cena":2000,"lesnik":2.2, "lomljeni":0, "orah":0, "crni orah":0 ,"isporuceno":"da", "naplaceno":"da"},
+    { "recordId":6, "name":"Vida Pavlovic", "cena":6000,"lesnik":1, "lomljeni":5, "orah":2, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"},
+    { "recordId":7, "name":"Milica Dervisevic", "cena":1700,"lesnik":1, "lomljeni":0, "orah":1, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"},
+    { "recordId":8, "name":"Jelena Kostic", "cena":6400,"lesnik":2, "lomljeni":2, "orah":4, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"}
 ]
 }
