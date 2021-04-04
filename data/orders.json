@@ -1,0 +1,7 @@
+{
+	"orders": [
+    { "recordId":1, "name":"Ivana Zekovic", "cena":900,"lesnik":1, "lomljeni":0, "orah":0, "crni orah":0 ,"isporuceno":"da", "naplaceno":"da"},
+    { "recordId":2, "name":"Vesna Vodnik", "cena":1600,"lesnik":0, "lomljeni":0, "orah":2, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"},
+    { "recordId":3, "name":"Ivana Zekovic", "cena":800,"lesnik":0, "lomljeni":0, "orah":1, "crni orah":0 ,"isporuceno":"ne", "naplaceno":"ne"}
+]
+}
