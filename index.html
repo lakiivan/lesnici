@@ -9,36 +9,41 @@
 </head>
 <body>
 	<header>
-		<nav>
-			<a href="index.html" class="pull left">
-				<img src="images/ms-icon.png" alt="Lesnici Beograd logo"/>
-				<h1>LESNICI BEOGRAD</h1>
-			</a>
-		</nav>
-	</header> <!--  header ends here -->
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><img src="images/ms-icon.png" alt="Lesnici Beograd logo"/>
+					</a>
+					<a class="navbar-text" href="index.html">
+						<h1>LESNICI BEOGRAD</h1>
+					</a>
+				</div>
+			</header> <!--  header ends here -->
 
-	<div id="mainWindow">
-		<p><img src="images/plantaza.png" width="754" height="424"
-			alt="Plantaza" class="align-center" />
-		</p> 
-		<table class="center" id="buttons">
-			<tr>
-				<td><button id="orderi" onclick="displayDate(); retrieveOreders(); ">Aktivni orderi</button></td>
-				<td>
-					<input type=button id="newOrder" onclick="location.href='order.html'" value='Novi order'>
-				</td>
-			</tr>
-		</table>
+			<div id="mainWindow">
+				<p><img src="images/plantaza.png" width="754" height="424"
+					alt="Plantaza" class="align-center" />
+				</p> 
+				<table class="center" id="buttons">
+					<tr>
+						<td><button id="orderi" onclick="displayDate(); retrieveOreders(); ">Aktivni orderi</button></td>
+						<td>
+							<input type=button id="newOrder" onclick="location.href='order.html'" value='Novi order'>
+						</td>
+					</tr>
+				</table>
 
-		<p id='date'></p>
-		<p id='data'></p>
+				<p id='date'></p>
+				<p id='data'></p>
+				<p id="content"></p>
 
-	</div> <!-- main window ends here -->
+			</div> <!-- main window ends here -->
 
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/ajax-utils.js"></script>
-	<script src="js/script.js"></script>
-</body>
-<footer>&copy by Lesnici Beograd</footer>
-</html>
+			<script src="js/jquery-2.1.4.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/ajax-utils.js"></script>
+			<script src="js/script.js"></script>
+		</body>
+		<footer>&copy by Lesnici Beograd</footer>
+		</html>
