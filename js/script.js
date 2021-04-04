@@ -1,24 +1,22 @@
-function displayDate() {
-	document.getElementById('data').innerHTML = Date();
+// Event handling
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+    
+    // Unobtrusive event binding
+    document.querySelector("#orderi")
+      .addEventListener("click", function () {
+        
+        // Call server to get the name
+        $ajaxUtils
+          .sendGetRequest("data/contacts.txt", 
+            function (request) {
+              var name = request.responseText;
 
-}
+              document.querySelector("#content")
+                .innerHTML = "<h2>Hello " + name + "!</h2>";
+            });
 
-//retrieve json file
-function retrieveOreders() {
-	var myData = JSON.parse(data);
-	alert(myData[0].firstName);
-	alert(myData[0].lastName);
-	
-}
-
-
-
-(function (global) {
-
-	var test = {};
-
-	console.log("We are about to start.");
-
-	global.test = test;
-
-})(window);
+        
+      });
+  }
+);
