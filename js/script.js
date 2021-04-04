@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded",
       .sendGetRequest("data/orders.json", 
         function (res) {
           var orders = res.orders;
-          var message = "<h2> Ukupno svi orderi: " + orders.length + "</h2>";
+          var message = " ";
           message += "<div>"
           var i;
           for (i = 0; i < orders.length; i++) {
@@ -69,6 +69,11 @@ document.addEventListener("DOMContentLoaded",
               console.log(orders[i].name);
           }
           message += "</div>";
+
+          var messageHead =  "<h2> Ukupno svi orderi: " + orders.length + "</h2>";
+
+          document.querySelector("#contentHead")
+          .innerHTML = messageHead;
 
           document.querySelector("#content")
           .innerHTML = message;

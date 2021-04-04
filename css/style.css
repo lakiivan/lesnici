@@ -83,6 +83,20 @@ button:hover {
  	margin-right: auto;
 }
 
+
+
+#contentHead {
+	background-color: #ffffff;
+	color: #b6bb5f;
+	padding: 10px, 10px, 10px, 10px;
+}
+
+#content {
+	background-color: #ffffff;
+	color: #b6bb5f;
+	padding: 10px, 10px, 10px, 10px;
+}
+
 footer {
 	float: left;
 }
