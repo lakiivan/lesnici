@@ -17,6 +17,32 @@
 		</nav>
 	</header>
 
-	<p>Ovo je za sada samo test</p>
+	<div>
+		<fieldset id="porudzbina" class="align-center">
+			<legend>Porudžbina</legend>
+			<label>Ime:<br />
+				<input type="text" name="ime" id="ime"
+				required="required" />
+			</label><br />
+			<label>Lesnik, kg: <br />
+				<input type="number" name="lesnikKol" id="lesnikKol" />
+			</label><br />
+			<label>cena Lesnika: <br />
+				<input type="number" name="lesnikCena" 
+				id="lesnikCena" /></label><br />
+			<label>Orah:<br />
+			<input type="text" name="orahKol" id="orahKol" /></label><br />
+			<label id="orahCena">Cena oraha:<br />
+			<input type="text" name="orahCena" id="orahCena" /></label><br />
+			<label id="ukupnaCena">UKUPNA CENA: </label>
+
+			<button id="confirmOrder" onclick="confirmOrder()">Potvrdi porudzbinu</button>
+		</fieldset>		
+	</div>
+
+			<script src="js/jquery-2.1.4.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/ajax-utils.js"></script>
+			<script src="js/orderScript.js"></script>
 </body>
 </html>

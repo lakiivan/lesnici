@@ -1,3 +1,22 @@
+//funkcija za potvrdu porudzbine
+function confirmOrder() {
+  var message = "Vasa porudzbina je uspesno sacuvana";
+  alert(message);
+  var ukupnaCena = 0;
+  var lesnikKol = document.getElementById("lesnikKol").value;
+  if(lesnikKol == null) {
+    lesnikKol = 0;
+  }
+  var lesnikCena = document.getElementById("lesnikCena").value;
+  if (lesnikCena == null) {
+    lesnikCena = 0;
+  }
+  ukupnaCena = lesnikCena * lesnikKol;
+  console.log(message + " a ukupna cena je " + ukupnaCena);
+  document.getElementById('ukupnaCena').innerHTML = "UKUPNA CENA: " + ukupnaCena;
+}
+
+
 // Event handling
 document.addEventListener("DOMContentLoaded",
   function (event) {

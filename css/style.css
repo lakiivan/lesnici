@@ -67,7 +67,7 @@ td button {
 }
 
 button:hover {
-	background-color: #6d712eff
+	background-color: #6d712eff;
 }
 
 #newOrder {
@@ -104,4 +104,25 @@ button:hover {
 
 footer {
 	float: left;
+}
+
+
+#porudzbina {
+	max-width: 748px;
+}
+
+#ukupnaCena {
+	padding-top: 10px;
+	float: left;
+	font-size: 24px;
+	font-variant: bold;
+}
+
+#confirmOrder {
+	float: right;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #b6bb5f;
+	height: 50px;
+	width: 200px;
 }
