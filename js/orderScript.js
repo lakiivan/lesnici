@@ -23,7 +23,7 @@ function confirmOrder() {
 
   var message = "Porudzbina broj 7 je uspesno sacuvana \n";
   message += "Porucilac " + ime + "\n";
-  message += "je porucio " + lesnikKol + " kg lesniak po ceni od " + lesnikCena + "\n";
+  message += "je porucio " + lesnikKol + " kg lesnika po ceni od " + lesnikCena + "\n";
   message += "UKUPNA Vrednost porudzbine je " + ukupnaCena;
    alert(message);
 

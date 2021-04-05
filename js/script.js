@@ -1,20 +1,3 @@
-//funkcija za potvrdu porudzbine
-function confirmOrder() {
-  var message = "Vasa porudzbina je uspesno sacuvana";
-  alert(message);
-  var ukupnaCena = 0;
-  var lesnikKol = document.getElementById("lesnikKol").value;
-  if(lesnikKol == null) {
-    lesnikKol = 0;
-  }
-  var lesnikCena = document.getElementById("lesnikCena").value;
-  if (lesnikCena == null) {
-    lesnikCena = 0;
-  }
-  ukupnaCena = lesnikCena * lesnikKol;
-  console.log(message + " a ukupna cena je " + ukupnaCena);
-  document.getElementById('ukupnaCena').innerHTML = "UKUPNA CENA: " + ukupnaCena;
-}
 
 
 // Event handling
@@ -34,10 +17,30 @@ document.addEventListener("DOMContentLoaded",
           message += "<div>"
           var i;
           var counter = 0;
+              message += "<table id='aktivniOrderiTable'><tr>";
+              message += "<th scope='col' class='orderiHeadTd'>Order id</th>";
+              message +="<th scope='col' class='orderiHeadTd'>Ime</th>";
+              message +="<th scope='col' class='orderiHeadTd'>naplaceno</th>";
+              message +="<th scope='col' class='orderiHeadTd'>lesnik, kg</th>";
+              message +="<th scope='col' class='orderiHeadTd'>lomljeni, kg</th>";
+              message +="<th scope='col' class='orderiHeadTd'>orah, kg</th>";
+              message +="<th scope='col' class='orderiHeadTd'>crni orah, kg</th>";
+              message +="<th scope='col' class='orderiHeadTd'>isporuceno</th></tr>";
           for (i = 0; i < orders.length; i++) {
             if (orders[i].isporuceno === 'ne') {
               counter++;
-              message += "<p id='podaci'>";
+              message +="<tr>";
+              message +="<td class='orderiTd'>" + orders[i].recordId +"</td>";
+              message +="<td class='orderiTd'>" + orders[i].name +"</td>"; 
+              message +="<td class='orderiTd'>" + orders[i].naplaceno +"</td>"; 
+              message +="<td class='orderiTd'>" + orders[i].lesnik +"</td>"; 
+              message +="<td class='orderiTd'>" + orders[i].lomljeni +"</td>"; 
+              message +="<td class='orderiTd'>" + orders[i].orah +"</td>"; 
+              message +="<td class='orderiTd'>" + orders[i].crniOrah +"</td>";  
+              message +="<td class='orderiTd'>" + orders[i].isporuceno +"</td>";
+              message +="</tr>";
+
+              /*message += "<p id='podaci'>";
               message += "Record id: " + orders[i].recordId 
               + ", name " + orders[i].name 
               + ", za naplatu - " + orders[i].cena + " din;"
@@ -45,12 +48,12 @@ document.addEventListener("DOMContentLoaded",
               + " orasi: " + orders[i].orah  + " kg;"
               + " isporuceno: " + orders[i].isporuceno 
               + ", naplaceno: " + orders[i].naplaceno +  "<br>"
-              message += "</p>";
+              message += "</p>";*/
               console.log(counter);
             } 
 
           }
-          message += "</div>";
+          message += "</table>";
           console.log("counter is: " + counter);
           var messageHead =  "<h2 id='podaci'> Aktivni orderi: " + counter + "</h2>";
 

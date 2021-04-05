@@ -51,11 +51,28 @@ table {
 	text-align: center;
 }
 
-td {
+.orderiHeadTd {
+	padding: 10px;
+}
+
+.orderiTd {
+	border: solid;
+	border-width: 1px;
+	padding: 5px;
+}
+
+#aktivniOrderiTable {
+	float: left;
+	background-color: #fff;
+	border: solid;
+	border-width: 2px;
+}
+
+/*td {
 	text-align: center;
 	width: 300px;
 	height: 100px;
-}
+}*/
 td button {
 	width: 250px;
 	height: 100px;
@@ -103,7 +120,9 @@ button:hover {
 
 
 footer {
-	float: left;
+	position: fixed;
+  	right: 0;
+  	bottom: 0;
 }
 
 
