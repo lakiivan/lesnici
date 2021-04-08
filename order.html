@@ -30,19 +30,34 @@
 			<label>cena Lesnika: <br />
 				<input type="number" name="lesnikCena" 
 				id="lesnikCena" class="inputFields" /></label><br />
-			<label>Orah:<br />
-			<input type="text" name="orahKol" id="orahKol" class="inputFields" /></label><br />
-			<label id="orahCena">Cena oraha:<br />
-			<input type="text" name="orahCena" id="orahCena" class="inputFields" /></label><br />
-			<label id="ukupnaCena">UKUPNA CENA: </label><br /> 
+				<label>Orah:<br />
+					<input type="text" name="orahKol" id="orahKol" class="inputFields" /></label><br />
+					<label id="orahCena">Cena oraha:<br />
+						<input type="text" name="orahCena" id="orahCena" class="inputFields" /></label><br />
 
-			<button id="confirmOrder" onclick="confirmOrder()">Potvrdi porudzbinu</button>
-		</fieldset>		
-	</div>
+						<label id="ukupnaCena">UKUPNA CENA: </label><br /> 
 
-			<script src="js/jquery-2.1.4.min.js"></script>
-			<script src="js/bootstrap.min.js"></script>
-			<script src="js/ajax-utils.js"></script>
-			<script src="js/orderScript.js"></script>
-</body>
-</html>
+
+						<fieldset id="statusPorudzbine">
+							<legend id="statusPorLegend">Status porudzbine</legend>
+							<div class="checkBoxAlign">
+							<label for="isporucenoDaNe">Isporuceno</label>
+							<input type="checkbox" name="isporucenoDaNe" id="isporuceno" class="inputFields" />
+						</div>
+						<div class="checkBoxAlign">
+							<label for="naplacenoDaNe">Naplaceno</label>
+							<input type="checkbox" name="naplacenoDaNe" id="naplaceno" class="inputFields" />
+						</div>	
+
+						</fieldset>
+
+							<button id="confirmOrder" onclick="confirmOrder()">Potvrdi porudzbinu</button>
+						</fieldset>		
+					</div>
+
+					<script src="js/jquery-2.1.4.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="js/ajax-utils.js"></script>
+					<script src="js/orderScript.js"></script>
+				</body>
+				</html>

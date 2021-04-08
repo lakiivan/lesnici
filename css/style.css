@@ -159,4 +159,20 @@ footer {
 		height: 100px;
 		font-size: 48px;
 	}
+
+	#statusPorudzbine {
+		font-size: 24px;
+		width: 90%;
+		background-color: #fefefe;
+	}
+
+	#statusPorLegend {
+		font-weight: bold;
+	}
+
+	[type="checkbox"]
+{
+    vertical-align:middle;
+}
+
 }
