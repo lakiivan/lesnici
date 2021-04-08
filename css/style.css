@@ -26,7 +26,7 @@ body {
 	font-size: 16px;
 	color: #b6bb5f;
 	font-family: 'Oxygen', sans-serif;
-	background-color: #efefef;
+	background-color: #bfbfbf;
 }
 
 header {
@@ -128,6 +128,7 @@ footer {
 
 #porudzbina {
 	max-width: 748px;
+	background-color: #efefef;
 }
 
 #ukupnaCena {
@@ -156,18 +157,20 @@ body {
 		height: 50px;
 		width: 95%;
 		align-content: center;
-		font-size: 48px;
+		font-size: 2em;
 	}
 
 	#confirmOrder {
+		margin-top: 5%;
+		margin-bottom: 5%;
 		width: 100%;
 		height: 100px;
-		font-size: 48px;
+		font-size: 2em;
 	}
 
 	#statusPorudzbine {
 		font-size: 1.1em;
-		width: 90%;
+		width: 88%;
 		background-color: #fefefe;
 	}
 
