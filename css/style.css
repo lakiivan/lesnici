@@ -45,6 +45,11 @@ header {
 	margin: 0px auto;
 }
 
+#porudzbina>legend {
+	font-size: 2em;
+	color: #808080;
+}
+
 table {
 	margin-left: auto; 
   	margin-right: auto;
@@ -181,5 +186,7 @@ body {
 	#statusPorLegend {
 		font-weight: bold;
 	}
+
+
 
 }

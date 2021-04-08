@@ -40,7 +40,7 @@ function getDate() {
 
   if(dd<10) {
       dd = '0'+dd
-  } 
+  }
 
   if(mm===0) {
       mm = 'Jan';
