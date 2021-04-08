@@ -144,3 +144,17 @@ footer {
 	height: 50px;
 	width: 200px;
 }
+
+@media (max-width: 1000px) {
+	.inputFields {
+		height: 50px;
+		width: 99%;
+		color: red;
+		align-content: center;
+	}
+
+	#confirmOrder {
+		width: 99%;
+		height: 100px;
+	}
+}
