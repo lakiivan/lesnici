@@ -134,7 +134,7 @@ footer {
 #ukupnaCena {
 	padding-top: 10px;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 2em;
 	font-variant: bold;
 }
 
@@ -154,6 +154,10 @@ body {
 }
 
 	.inputFields {
+		margin-right: 5%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding: 1%;
 		height: 50px;
 		width: 95%;
 		align-content: center;
@@ -177,10 +181,5 @@ body {
 	#statusPorLegend {
 		font-weight: bold;
 	}
-
-	[type="checkbox"]
-{
-    vertical-align:middle;
-}
 
 }
