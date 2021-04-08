@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Lesnici Beograd</title>
-<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+	<meta charset="utf-8">
+	<title>Lesnici Beograd</title>
+	<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
-<header>
-<nav>
-	<a href="index.html" class="pull left">
-		<img src="images/ms-icon.png" alt="Lesnici Beograd logo"/>
-		<h1>LESNICI BEOGRAD</h1>
-	</a>
-</nav>
-</header>
+	<header>
+		<nav>
+			<a href="index.html" class="pull left">
+				<img src="images/ms-icon.png" alt="Lesnici Beograd logo"/>
+				<h1>LESNICI BEOGRAD</h1>
+			</a>
+		</nav>
+	</header>
 
-<div>
-<fieldset id="porudzbina" class="align-center">
-	<legend>Porudžbina</legend>
-	<label>Ime:<br />
-		<input type="text" name="ime" id="ime" class="inputFields"
-		required="required" />
-	</label><br />
-	<label>Lesnik, kg: <br />
-		<input type="number" name="lesnikKol" id="lesnikKol" class="inputFields" />
-	</label><br />
-	<label>cena Lesnika: <br />
-		<input type="number" name="lesnikCena" 
-		id="lesnikCena" class="inputFields" value="900" /></label><br />
-	<label>Orah:<br />
-	<input type="text" name="orahKol" id="orahKol" class="inputFields" /></label><br />
-	<label>Cena oraha:<br />
-	<input type="text" name="orahCena" id="orahCena" class="inputFields" value="700" /></label><br />
+	<div>
+		<fieldset id="porudzbina" class="align-center">
+			<legend>Porudžbina</legend>
+			<label>Ime:<br />
+				<input type="text" name="ime" id="ime" class="inputFields"
+				required="required" />
+			</label><br />
+			<label>Lesnik, kg: <br />
+				<input type="number" name="lesnikKol" id="lesnikKol" class="inputFields" />
+			</label><br />
+			<label>cena Lesnika: <br />
+				<input type="number" name="lesnikCena" 
+				id="lesnikCena" class="inputFields" value="900" /></label><br />
+				<label>Orah:<br />
+					<input type="text" name="orahKol" id="orahKol" class="inputFields" /></label><br />
+					<label>Cena oraha:<br />
+						<input type="text" name="orahCena" id="orahCena" class="inputFields" value="700" /></label><br />
 
-	<label>Datum porudzbine:<br />
-	<input type="date" name="datum" onload="getDate()" id="datum" class="inputFields" /></label><br />
+						<label>Datum porudzbine:<br />
+							<input type="date" name="datum" onload="getDate()" id="datum" class="inputFields" /></label><br />
 
-	<label id="ukupnaCena">UKUPNA CENA: </label><br /> 
+							<label id="ukupnaCena">UKUPNA CENA: </label><br /> 
 
 
-			<fieldset id="statusPorudzbine">
-				<legend id="statusPorLegend">Status porudzbine</legend>
-					<div class="checkBoxAlign">
-						<label for="isporucenoDaNe">Isporuceno</label>
-						<input type="checkbox" name="isporucenoDaNe" id="isporuceno" class="inputFields" />
+							<fieldset id="statusPorudzbine">
+								<legend id="statusPorLegend">Status porudzbine</legend>
+								<div class="checkBoxAlign">
+									<label for="isporucenoDaNe">Isporuceno</label>
+									<input type="checkbox" name="isporucenoDaNe" id="isporuceno" class="inputFields" />
+								</div>
+								<div class="checkBoxAlign">
+									<label for="naplacenoDaNe">Naplaceno</label>
+									<input type="checkbox" name="naplacenoDaNe" id="naplaceno" class="inputFields" />
+								</div>	
+
+							</fieldset>
+
+							<button id="confirmOrder" onclick="confirmOrder()">Potvrdi porudzbinu</button>
+						</fieldset>		
 					</div>
-					<div class="checkBoxAlign">
-						<label for="naplacenoDaNe">Naplaceno</label>
-						<input type="checkbox" name="naplacenoDaNe" id="naplaceno" class="inputFields" />
-					</div>	
 
-				</fieldset>
-
-				<button id="confirmOrder" onclick="confirmOrder()">Potvrdi porudzbinu</button>
-			</fieldset>		
-		</div>
-
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/ajax-utils.js"></script>
-		<script src="js/orderScript.js"></script>
-	</body>
-	</html>
+					<script src="js/jquery-2.1.4.min.js"></script>
+					<script src="js/bootstrap.min.js"></script>
+					<script src="js/ajax-utils.js"></script>
+					<script src="js/orderScript.js"></script>
+				</body>
+				</html>
