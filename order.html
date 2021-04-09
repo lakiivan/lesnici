@@ -25,20 +25,20 @@
 				required="required" />
 			</label><br />
 			<label>Lesnik, kg: <br />
-				<input type="number" name="lesnikKol" id="lesnikKol" class="inputFields" />
+				<input type="number" name="lesnikKol" id="lesnikKol" class="inputFields" onblur="calculateUkupnaCena()" />
 			</label><br />
 			<label>cena Lesnika: <br />
 				<input type="number" name="lesnikCena" 
 				id="lesnikCena" class="inputFields" value="900" /></label><br />
 				<label>Orah:<br />
-					<input type="text" name="orahKol" id="orahKol" class="inputFields" /></label><br />
+					<input type="text" name="orahKol" id="orahKol" class="inputFields" onblur="calculateUkupnaCena()" /></label><br />
 					<label>Cena oraha:<br />
 						<input type="text" name="orahCena" id="orahCena" class="inputFields" value="700" /></label><br />
 
 						<label>Datum porudzbine:<br />
 							<input type="date" name="datum" onload="getDate()" id="datum" class="inputFields" /></label><br />
 
-							<label id="ukupnaCena">UKUPNA CENA: </label><br /> 
+							<label id="ukupnaCena" >UKUPNA CENA: </label><br /> 
 
 
 							<fieldset id="statusPorudzbine">

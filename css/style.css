@@ -67,6 +67,7 @@ table {
 }
 
 #aktivniOrderiTable {
+	max-width: 90%;
 	float: left;
 	background-color: #fff;
 	border: solid;
@@ -108,12 +109,18 @@ button:hover {
 }
 
 #contentHead {
+	align-content: center;
+	max-width: 90%;
 	background-color: #ffffff;
 	color: #b6bb5f;
+	margin-left: 5%;
 	padding: 10px, 10px, 10px, 10px;
 }
 
 #content {
+	margin-left: 5%;
+	font-size: 0.7em;
+	max-width: 90%;
 	background-color: #ffffff;
 	color: #b6bb5f;
 	padding: 10px, 10px, 10px, 10px;

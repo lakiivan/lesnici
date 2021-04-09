@@ -1,32 +1,28 @@
 //funkcija za potvrdu porudzbine
 function confirmOrder() {
   
-  var date = new Date();
-  console.log("Datum je " + date);
+  //var date = new Date();
+  //console.log("Datum je " + date);
 
-  var ukupnaCena = 0;
+  var ukupnaCena = calculateUkupnaCena();
 
   var ime = document.getElementById("ime").value;
-  console.log("Ime porucioca je: " + ime);
-
   var lesnikKol = document.getElementById("lesnikKol").value;
-  console.log("Kolicina lesnika je " + lesnikKol);
-  if(lesnikKol === null || lesnikKol==="") {
-    lesnikKol = 0;
-  }
   var lesnikCena = document.getElementById("lesnikCena").value;
-  console.log("Cena lesnika je " + lesnikCena);
-  if (lesnikCena == null || lesnikCena == "") {
-    lesnikCena = 0;
-  }
-  ukupnaCena = lesnikCena * lesnikKol;
-  console.log("ukupna cena je " + ukupnaCena);
-  document.getElementById('ukupnaCena').innerHTML = "UKUPNA CENA: " + ukupnaCena;
+  var orahKol = document.getElementById("orahKol").value;
+  var orahCena = document.getElementById("orahCena").value;
+
+  //console.log("Ime porucioca je: " + ime);
 
 
   var message = "Porudzbina broj 7 je uspesno sacuvana \n";
   message += "Porucilac " + ime + "\n";
-  message += "je porucio " + lesnikKol + " kg lesnika po ceni od " + lesnikCena + "\n";
+  if (lesnikKol != 0) {
+    message += "je porucio " + lesnikKol + " kg lesnika po ceni od " + lesnikCena + "\n";  
+  }
+  if (orahKol != 0) {
+    message += "je porucio " + orahKol + " kg oraha po ceni od " + orahCena + "\n";
+  }
   message += "UKUPNA Vrednost porudzbine je " + ukupnaCena;
    alert(message);
 
@@ -79,3 +75,17 @@ function getDate() {
 window.onload = function() {
   getDate();
 };
+
+function calculateUkupnaCena() {
+  var ukupnaCena = 0;
+  var lesnikKol = document.getElementById("lesnikKol").value;
+  var lesnikCena = document.getElementById("lesnikCena").value;
+  var orahKol = document.getElementById("orahKol").value;
+  var orahCena = document.getElementById("orahCena").value;
+  
+  ukupnaCena = lesnikKol * lesnikCena + orahKol * orahCena;
+
+  console.log("Ukupna cena je: " + ukupnaCena);
+  document.getElementById('ukupnaCena').innerHTML = "UKUPNA CENA: " + ukupnaCena;
+
+}
