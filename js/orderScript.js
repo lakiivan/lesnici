@@ -4,14 +4,14 @@ function confirmOrder() {
   //var date = new Date();
   //console.log("Datum je " + date);
 
-  var ukupnaCena = calculateUkupnaCena();
+  
 
   var ime = document.getElementById("ime").value;
   var lesnikKol = document.getElementById("lesnikKol").value;
   var lesnikCena = document.getElementById("lesnikCena").value;
   var orahKol = document.getElementById("orahKol").value;
   var orahCena = document.getElementById("orahCena").value;
-
+  var ukupnaCena = justCalculateUkupnaCena();
   //console.log("Ime porucioca je: " + ime);
 
 
@@ -77,7 +77,11 @@ window.onload = function() {
 };
 
 function calculateUkupnaCena() {
-  var ukupnaCena = 0;
+  var ukupnaCena = justCalculateUkupnaCena();
+  document.getElementById('ukupnaCena').innerHTML = "UKUPNA CENA: " + ukupnaCena;
+}
+
+function justCalculateUkupnaCena() {
   var lesnikKol = document.getElementById("lesnikKol").value;
   var lesnikCena = document.getElementById("lesnikCena").value;
   var orahKol = document.getElementById("orahKol").value;
@@ -85,7 +89,5 @@ function calculateUkupnaCena() {
   
   ukupnaCena = lesnikKol * lesnikCena + orahKol * orahCena;
 
-  console.log("Ukupna cena je: " + ukupnaCena);
-  document.getElementById('ukupnaCena').innerHTML = "UKUPNA CENA: " + ukupnaCena;
-
+  return ukupnaCena;
 }
